@@ -1,0 +1,48 @@
+# ==============================================================================
+# GitHub Safety & Account Protection .gitignore
+# Prevents accidental commits of wordlists, hashes, binaries, and secrets
+# ==============================================================================
+
+# --- Wordlists & Dictionaries ---
+*rockyou*
+*.wordlist
+*.dict
+*.lst
+passwords.txt
+wordlists/
+dictionaries/
+
+# --- Hash & Dump Files ---
+*.hash
+*.dump
+*.pot
+*.potfile
+extracted-hash.txt
+
+# --- Binaries & Large Media ---
+*.exe
+*.dll
+*.so
+*.bin
+*.iso
+*.pdf
+*.zip
+*.tar.gz
+*.7z
+
+# --- Secrets & Keys ---
+*.env
+*.key
+*.pem
+*.token
+*secret*
+id_rsa
+id_ed25519
+
+# --- OS & Editor Files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.tmp
